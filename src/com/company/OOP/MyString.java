@@ -7,17 +7,21 @@ public class MyString {
     public static void main(String [] args) {
         char ch = 'i';
         String string = "Max";
-        char[] symbolsOne = {'M', 'a','x'};
-        char[] symbolsTwo
-        toString(symbolsOne);
-        indexOf(ch);
+        char[] symbolsOne = {'M', 'a','x','i','m'};
+        char[] symbolsTwo = {'S','o','k','u','r'};
+
+        System.out.print(toString(symbolsOne));
+        System.out.print('\n');
+        System.out.print(indexOf(symbolsOne, ch));
+        System.out.print('\n');
+        System.out.print(count(symbolsOne, ch));
+        System.out.print('\n');
+        System.out.print(concat(symbolsOne,symbolsTwo));
 
     }
     public static String toString(char[] in){
-            String str = " ";
-            str = in.toString();
-            System.out.println(str);
-            return str;
+
+            return new String(in);
     }
 
         public static int indexOf ( char[] src, char ch){
@@ -26,7 +30,7 @@ public class MyString {
                     return  i;
                 }
             }
-            System.out.print(ch);
+
             return -1;
         }
 
