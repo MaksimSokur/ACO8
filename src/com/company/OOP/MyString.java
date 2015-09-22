@@ -6,7 +6,6 @@ package com.company.OOP;
 public class MyString {
     public static void main(String [] args) {
         char ch = 'i';
-        String string = "Max";
         char[] symbolsOne = {'M', 'a','x','i','m'};
         char[] symbolsTwo = {'S','o','k','u','r'};
 
