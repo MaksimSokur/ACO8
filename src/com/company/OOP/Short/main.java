@@ -17,7 +17,10 @@ public class main {
 
         Decimal decimal = new Decimal();
 
-        System.out.println(decimal.Sum(oneFirst, oneSecond, twoFirst, twoSecond));
-
+        System.out.println(decimal.Addition(oneFirst, oneSecond, twoFirst, twoSecond));
+        System.out.println(decimal.Substraction(oneFirst, oneSecond, twoFirst, twoSecond));
+        System.out.println(decimal.Multiplication(oneFirst, oneSecond, twoFirst, twoSecond));
+        System.out.println(decimal.Division(oneFirst, oneSecond, twoFirst, twoSecond));
+        decimal.Comparing(oneFirst, oneSecond, twoFirst, twoSecond);
     }
 }
