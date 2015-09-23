@@ -38,11 +38,11 @@ public class Chislo {
 
 	public void comparing(int value, int next_value) {
 		if (value > next_value) {
-			System.out.print(value);
+			System.out.print(value + " > " + next_value);
 		} else if (value == next_value) {
-			System.out.print(value & next_value);
+			System.out.print(value + " == " + next_value);
 		} else if (value < next_value) {
-				System.out.print(next_value);
+				System.out.print(next_value +  " > " + value);
 		}   //метод который сравнивает два числа
 	}
 }

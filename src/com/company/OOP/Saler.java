@@ -1,7 +1,5 @@
 package com.company.OOP;
 
-import java.util.Scanner;
-
 /**
  * fields properties
  */
