@@ -9,7 +9,6 @@ public class main {
     public static void main(String[] args) {
         Array array[] = new Array[5];
         Random random = new Random();
-        int i = random.nextInt(array);
+
     }
     }
-}
