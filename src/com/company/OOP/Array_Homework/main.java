@@ -6,9 +6,10 @@ package com.company.OOP.Array_Homework;
 public class main {
     public static void main(String[] args) {
         Array array = new Array();
-        int [] arr = new  int [10];
-        array.maximum(arr);
-        array.minimum(arr);
+
+        array.maximum();
+        array.minimum();
+        array.sortArray();
 
     }
 }
