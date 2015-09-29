@@ -5,6 +5,7 @@ package com.company.OOP.week2.AnimalPound;
  */
 public class CreateAnimalPound {
     public int freeCell = 0;
+    public int cell = 0;
     private String address;
     private String time;
     private Annimal[] annimals = new Annimal[10];
@@ -30,9 +31,11 @@ public class CreateAnimalPound {
     public void setTime(String time) {
         this.time = time;
     }
-    public void addAminal(Annimal annimal){
-        if(freeCell == ce)
-        annimal[freeCell] = Annimal;
-        freeCell++;
+
+    public void addAminal(Annimal annimal) {
+        if (freeCell == cell) {
+            // annimal[freeCell] = Annimal;}
+            freeCell++;
+        }
     }
 }
