@@ -1,14 +1,15 @@
 package com.company.OOP.Week2_homework.student;
 
+import java.io.PrintStream;
+
 /**
  * Created by User on 29.09.2015.
  */
 public class CreateStudent{
     private String name;
     private String addres;
-    private Object [] objects = new Object[10];
+    public Object [] objects = new Object[10];
 
-    CreateStudent curentStudent = new CreateStudent("Anton", "Kiev, Kreshatik");
 
     public CreateStudent(String name, String addres) {
         this.name = name;
@@ -16,7 +17,8 @@ public class CreateStudent{
     }
 
     public void studentLearn(){
-
+        for(int i = 0; i < objects.length; i++)
+        objects[i].showInformationAboutObject();
     }
 
     public String getName() {
@@ -34,12 +36,8 @@ public class CreateStudent{
     public void setAddres(String addres) {
         this.addres = addres;
     }
-
-    public String getLearning() {
-        return learning;
+    public PrintStream showStudent(){
+        return System.out.printf("Name: %s, Adress: %s", name, addres);
     }
 
-    public void setLearning(String learning) {
-        this.learning = learning;
-    }
 }

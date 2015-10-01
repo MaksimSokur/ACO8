@@ -4,47 +4,57 @@ package com.company.OOP.week2.Day2.model;
  * Created by User on 27.09.2015.
  */
 public class Human {
-    private String Name;
-    private int Age;
-    private String Phone;
-
-    public Human(String name, int age, String phone) {
-        Name = name;
-        Age = age;
-        Phone = phone;
-    }
+    private String name;
+    private int age;
+    private String phone;
 
     private Address address;
 
-    public Human(String name, Address address, String phone, int age) {
-        Name = name;
+    public Human(String name, int age, String phone) {
+        this.name = name;
+        this.age = age;
+        this.phone = phone;
+    }
+
+    public Human(String name, int age, String phone, Address address) {
+        this.name = name;
+        this.age = age;
+        this.phone = phone;
         this.address = address;
-        Phone = phone;
-        Age = age;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public String getName() {
-
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public int getAge() {
-        return Age;
+        return age;
     }
 
     public void setAge(int age) {
-        Age = age;
+        this.age = age;
     }
 
     public String getPhone() {
-        return Phone;
+        return phone;
     }
 
     public void setPhone(String phone) {
-        Phone = phone;
+        this.phone = phone;
+    }
+    public String asString(){
+        return String.format("name %s, age %d", name,age);
     }
 }
