@@ -22,6 +22,10 @@ public class Coder extends Employee{
     public void setLanguage(String language) {
         this.language = language;
     }
+    public String toString(){
+
+        return getName();
+    }
 
     public void writeCode(){
 
