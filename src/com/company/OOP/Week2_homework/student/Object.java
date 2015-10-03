@@ -11,6 +11,11 @@ public class Object {
     private int hoursWorksWithStudent;
     private int degreeStudent;
 
+    public Object(String nameObject, int hoursInSemester) {
+        this.nameObject = nameObject;
+        this.hoursInSemester = hoursInSemester;
+    }
+
     public Object(String nameObject, int degreeStudent, int hoursWorksWithStudent, int hoursInSemestr) {
         this.nameObject = nameObject;
         this.degreeStudent = degreeStudent;
@@ -18,30 +23,10 @@ public class Object {
         this.hoursInSemester = hoursInSemestr;
     }
 
-    public void showObjectMenu(){
-        int choise = -1;
-        Scanner scanner = new Scanner(System.in);
-        while (choise != 4){
-            choise = scanner.nextInt();
-            if(choise == 1){
-                toPassAnExam();
-            }else if(choise == 2){
-                showInformationAboutObject();
-            }else if(choise == 3){
-                takeTheValue(nameObject);
-            }
-        }
-    }
-    public boolean toPassAnExam (){
-        if(degreeStudent < 64){
-            return false;
-        }
-        return true;
-    }
     public void showInformationAboutObject(){
-        System.out.printf("Name of Object: %s, amount of hours: %d", nameObject, hoursWorksWithStudent);
+        System.out.printf("\nName of Object: %s, amount of hours: %d", nameObject, hoursWorksWithStudent);
     }
-    public void takeTheValue(String nameObject){
+    public void takeTheValue(){
         System.out.printf("Value of student: %s = %d", nameObject, degreeStudent );
     }
 
