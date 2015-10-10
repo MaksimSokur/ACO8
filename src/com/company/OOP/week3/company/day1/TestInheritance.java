@@ -1,4 +1,4 @@
-package com.company.OOP.week3.company;
+package com.company.OOP.week3.company.day1;
 
 /**
  * Created by User on 03.10.2015.
@@ -9,7 +9,7 @@ public class TestInheritance {
         coder.work();
         coder.writeCode();
         Manager manager = new Manager();
-        manager.addCoder(new Coder());
-        manager.addTester(new Tester());
+        manager.doTeamWork();
+        manager.addEmployee(new Employer());
     }
 }

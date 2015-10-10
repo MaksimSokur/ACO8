@@ -23,11 +23,12 @@ public class Object {
         this.hoursInSemester = hoursInSemestr;
     }
 
-    public void showInformationAboutObject(){
+    public void showInformationAboutObject() {
         System.out.printf("\nName of Object: %s, amount of hours: %d", nameObject, hoursWorksWithStudent);
     }
-    public void takeTheValue(){
-        System.out.printf("Value of student: %s = %d", nameObject, degreeStudent );
+
+    public void takeTheValue() {
+        System.out.printf("Value of student: %s = %d", nameObject, degreeStudent);
     }
 
     public String getNameObject() {

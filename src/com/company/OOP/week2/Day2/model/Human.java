@@ -10,7 +10,12 @@ public class Human {
 
     private Address address;
 
-    public Human(String name, int age, String phone) {
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Human(String name, int age,String phone) {
         this.name = name;
         this.age = age;
         this.phone = phone;

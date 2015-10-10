@@ -1,4 +1,4 @@
-package com.company.OOP.week3.company;
+package com.company.OOP.week3.company.day1;
 
 /**
  * Created by User on 03.10.2015.
